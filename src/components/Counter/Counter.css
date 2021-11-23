@@ -1,0 +1,25 @@
+.display {
+  display: flex;
+  flex-direction: column;
+}
+
+.number {
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.btn {
+  padding: 20px;
+  font-size: 25px;
+  background-color: rgb(145, 184, 255);
+  border: none;
+  border-radius: 10px;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.btn:active {
+  background-color: rgb(112, 162, 253);
+}
