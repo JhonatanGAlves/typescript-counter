@@ -4,14 +4,21 @@ import './Counter.css'
 export const Counter = () => {
   const [count, setCount] = useState(0)
 
-  const handleChangeCount = () => {
+  const handleChangeCountDown = () => {
+    setCount(count - 1)
+  }
+  
+  const handleChangeCountUp = () => {
     setCount(count + 1)
   }
 
   return (
     <div className="display">
       <span className="number">{count}</span>
-      <button className="btn" onClick={handleChangeCount}>+1</button>
+      <div>
+        <button className="btn" onClick={handleChangeCountDown}>-</button>
+        <button className="btn" onClick={handleChangeCountUp}>+</button>
+      </div>
     </div>
   )
 }
